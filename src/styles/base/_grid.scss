@@ -28,30 +28,30 @@
   @extend %clear;
 }
 
-@for $i from 1 through $greed-columns {
+@for $i from 1 through $grid-columns {
   .col-#{$i} {
     position: relative;
 
     float: left;
 
     box-sizing: border-box;
-    width: $i * $breakpoint-mobile-portrait / $greed-columns - $greed-gutter * 2;
-    margin: 0 $greed-gutter;
+    width: $i * $breakpoint-mobile-portrait / $grid-columns - $grid-gutter * 2;
+    margin: 0 $grid-gutter;
 
     @media screen and (min-width: $breakpoint-mobile-landscape) {
-      width: $i * $breakpoint-mobile-landscape / $greed-columns - $greed-gutter * 2;
+      width: $i * $breakpoint-mobile-landscape / $grid-columns - $grid-gutter * 2;
     }
 
     @media screen and (min-width: $breakpoint-tablet) {
-      width: $i * $breakpoint-tablet / $greed-columns - $greed-gutter * 2;
+      width: $i * $breakpoint-tablet / $grid-columns - $grid-gutter * 2;
     }
 
     @media screen and (min-width: $breakpoint-desktop) {
-      width: $i * $breakpoint-desktop / $greed-columns - $greed-gutter * 2;
+      width: $i * $breakpoint-desktop / $grid-columns - $grid-gutter * 2;
     }
 
     @media screen and (min-width: $breakpoint-desktop-large) {
-      width: $i * $breakpoint-desktop-large / $greed-columns - $greed-gutter * 2;
+      width: $i * $breakpoint-desktop-large / $grid-columns - $grid-gutter * 2;
     }
   }
 }
